@@ -10,7 +10,7 @@ File.open(color_schemes_file) do |colors|
     File.open(source_files) do |files|
       files.each_line do |file|
         #puts("vim -f #{vim_options} +\"TOhtml\" +\"wq #{file.chomp}.#{color.chomp}.html\" +\"q\" #{file.chomp}")
-        system("vim -f #{vim_options} +\"TOhtml\" +\"wq! #{file.chomp}.#{color.chomp}.html\" +\"q\" #{file.chomp}")
+        system("vim -f #{vim_options} +\"TOhtml\" +\"wq! data/#{file.chomp}.#{color.chomp}.html\" +\"q\" #{file.chomp}")
       end
     end
   end
