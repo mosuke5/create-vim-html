@@ -2,12 +2,20 @@
 
 ## How to use
 ```
-ruby create_vim_html.rb [config_file] [source_file]
+ruby create_vim_html.rb [color_scheme_list_file] [source_list_file]
 ```
 
-### Example config_file
+### Example color scheme list file
 ```
-syntax on
-colorscheme ron
-set number
+ron
+molokai
+jellybeans
+```
+
+### Example source list file
+```
+sample.rb
+sample.php
+sample.html
+sample.py
 ```
